@@ -66,6 +66,7 @@ class Form extends Component {
                     </Radio>{ ' ' }
                 </FormGroup>
                 </form>
+                <Button className="mx-auto" style={{ width: '50%', marginBottom: '1em' }} color="primary" size="lg">Click Here</Button>
                 <ButtonToolbar>
                     <Button bsStyle="primary" bsSize="large">
                     Large button

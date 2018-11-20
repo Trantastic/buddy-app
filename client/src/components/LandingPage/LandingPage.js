@@ -4,8 +4,8 @@ const LandingPage = () =>{
     
     return (
         <div>
-            <div classname='landingpage'>
-                <img src='' alt='langding page background image' /> 
+            <div className='landingpage'>
+                <img src='https://wallpapercave.com/wp/5rVu3yG.jpg' alt='langding page background image' /> 
             </div>
         </div>
     )

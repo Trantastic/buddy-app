@@ -5,17 +5,19 @@ import { Botton } from 'react-bootstrap'
 import Form from './components/Form';
 import LandingPage from './components/LandingPage'
 import Login from './components/Login'
-// import Signup from './components/Signup'
+import SignUp from './components/SignUp'
 
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Router> 
-          <Route exact path='/' component={LandingPage} />
-          <Route exact path='/login' component={Login} />
-          {/* <Route exact path='/signUp' component={Signup} /> */}
+        <Router>
+          <div> 
+            <Route exact path='/' component={LandingPage} />
+            <Route exact path='/login' component={Login} />
+            <Route exact path='/signUp' component={SignUp} />
+          </div>
         </Router>
         <Form />
       </div>

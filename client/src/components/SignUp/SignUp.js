@@ -1,11 +1,13 @@
 import React, { Component, Link } from 'react'
 import { Button, Form, FormGroup, Input, Label } from 'react-bootstrap'
 
-class Login extends Component {
+class SignUp extends Component {
 
     state = {
-        login: '',
-        password: '',
+        name: '',
+        email:'',
+        password: ''
+
     }
 
     render() {
@@ -15,6 +17,10 @@ class Login extends Component {
                     <FormGroup>
                         <Label for="userName">Username:</Label>
                         <Input type='username' name="user" id="userName" placeholder="Enter Username" />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="userEmail">Email:</Label>
+                        <Input type='userEmail' name="email" id="userEmail" placeholder="Enter Email" />
                     </FormGroup>
                     <FormGroup>
                         <Label for="password">Password:</Label>
@@ -27,4 +33,4 @@ class Login extends Component {
     }
 }
 
-export default Login
+export default SignUp

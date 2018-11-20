@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 // import { Link } from 'react-router'
-import Form from './components/Form';
+// import Form from './components/Form';
 import LandingPage from './components/LandingPage'
 import Login from './components/Login'
 import SignUp from './components/SignUp'

@@ -1,4 +1,5 @@
-import React, { Component, Link } from 'react'
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { Button, Form, FormGroup, Label } from 'react-bootstrap'
 
 class SignUp extends Component {

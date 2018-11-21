@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { FormGroup, Radio, ButtonToolbar, Button } from 'react-bootstrap';
 
-class Form extends Component {
+
+class Quiz extends Component {
     
     state = {
 
@@ -79,4 +80,4 @@ class Form extends Component {
     
 }
 
-export default Form;
+export default Quiz;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Button, Form, FormGroup, Label } from 'react-bootstrap'
+import Quiz from './components/Quiz'
 
 class Login extends Component {
 
@@ -21,7 +22,7 @@ class Login extends Component {
                         <Label for="password">Password:</Label>
                         <input type="password" name="password" id="password" placeholder="Enter Password" />
                     </FormGroup>
-                    <Button color="success"><Link to='/quiz'>Submit</Link></Button>
+                    <Button color="success"><Link to='/quiz' Component={Quiz}>Submit</Link></Button>
                 </Form>
             </div>
         )

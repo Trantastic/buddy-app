@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Button, Form, FormGroup, Label } from 'react-bootstrap'
-import Quiz from './components/Quiz'
+import Quiz from '../Quiz'
 
 class Login extends Component {
 

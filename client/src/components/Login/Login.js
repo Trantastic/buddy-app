@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Button, Form, FormGroup, Label } from 'react-bootstrap'
+import { Button, Form, FormGroup, FormControl } from 'react-bootstrap'
 import Quiz from '../Quiz'
+import './login.css'
 
 class Login extends Component {
 
@@ -12,17 +13,17 @@ class Login extends Component {
 
     render() {
         return(
-            <div>
+            <div className='row justify-content-md-center content'>
                 <Form>
                     <FormGroup>
-                        <Label for="userName">Username:</Label>
-                        <input type='username' name="user" id="userName" placeholder="Enter Username" />
+                        <p for="userName">Username:</p>
+                        <FormControl type="text" name="user" id="userName" placeholder="Enter Username" />
                     </FormGroup>
                     <FormGroup>
-                        <Label for="password">Password:</Label>
-                        <input type="password" name="password" id="password" placeholder="Enter Password" />
+                        <p for="password">Password:</p>
+                        <FormControl type="password" name="password" id="password" placeholder="Enter Password" />
                     </FormGroup>
-                    <Button color="success"><Link to='/quiz' Component={Quiz}>Submit</Link></Button>
+                    <Button type="submit" color="success"><Link to='/quiz' Component={Quiz}>Submit</Link></Button>
                 </Form>
             </div>
         )

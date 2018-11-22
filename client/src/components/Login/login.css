@@ -1,0 +1,11 @@
+.content{
+    margin-top: 200px !important;
+}
+
+.content button {
+    background-color: #ff5252; 
+}
+
+.content a {
+    color: white;
+}

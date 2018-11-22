@@ -4,19 +4,31 @@ import LandingPage from './components/LandingPage'
 import Login from './components/Login'
 import SignUp from './components/SignUp'
 import Quiz from './components/Quiz'
+import { Col, Row } from 'react-bootstrap'
+import './app.css'
 
 
 class App extends Component {
+  
   render() {
+
     return (
-        <Router>
-          <div> 
+ 
+      <Router>
+        <div>
+          <Row className="show-grid">
+          <Col xs={6} md={3} />
+          <Col xs={6} md={6}>
             <Route exact path='/' component={LandingPage} />
             <Route exact path='/login' component={Login} />
             <Route exact path='/signUp' component={SignUp} />
             <Route exact path='/quiz' component={Quiz} />
-          </div>
-        </Router>
+          </Col>
+          <Col xsHidden md={3} />
+          </Row>
+        </div>
+
+      </Router>
     )
   }
 }

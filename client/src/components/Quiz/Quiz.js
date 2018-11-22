@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Form, FormGroup, Radio, Button } from 'react-bootstrap';
+import './quiz.css'
 
 
 class Quiz extends Component {
@@ -10,7 +11,7 @@ class Quiz extends Component {
 
     render() {
         return(
-            <div>
+            <div className='row justify-content-md-center lists'>
                 <Form>
                     <FormGroup>
                         <p>How important are dogs to you?</p>
@@ -66,7 +67,7 @@ class Quiz extends Component {
                             Purple
                         </Radio>{ ' ' }
                     </FormGroup>
-                    <Button bsSize="large" bsStyle="success">Submit</Button>
+                    <Button>Submit</Button>
                 </Form>
             </div>
         )

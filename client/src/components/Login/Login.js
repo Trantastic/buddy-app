@@ -16,11 +16,11 @@ class Login extends Component {
             <div className='row justify-content-md-center content'>
                 <Form>
                     <FormGroup>
-                        <p for="userName">Username:</p>
+                        <p>Username:</p>
                         <FormControl type="text" name="user" id="userName" placeholder="Enter Username" />
                     </FormGroup>
                     <FormGroup>
-                        <p for="password">Password:</p>
+                        <p>Password:</p>
                         <FormControl type="password" name="password" id="password" placeholder="Enter Password" />
                     </FormGroup>
                     <Button type="submit" color="success"><Link to='/quiz' Component={Quiz}>Submit</Link></Button>

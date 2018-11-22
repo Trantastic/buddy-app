@@ -4,7 +4,8 @@ html body {
 }
 
 body {
-    background-image: url('https://wallpapercave.com/wp/5rVu3yG.jpg');
+    /* background-image: url('https://wallpapercave.com/wp/5rVu3yG.jpg'); */
+    background-image: url('https://images.wallpaperscraft.com/image/dog_beach_sand_footprints_sea_51356_1920x1200.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -12,8 +13,10 @@ body {
 
 }
 
-
-
+.content h1 {
+    font-size: 100px;
+    color: white;
+}
 
 .bg {
     height: 100%;

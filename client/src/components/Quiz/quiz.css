@@ -8,3 +8,10 @@
     color: white;
 }
 
+.form-group .radio-inline {
+    margin-right: 18px;
+}
+
+.form-group input {
+    margin-right: 6px;
+}

@@ -1,5 +1,14 @@
 .content{
-    margin-top: 200px !important;
+    margin-top: 180px !important;
+}
+
+.content .login-form {
+    padding: 50px 120px 50px 120px;
+    background-color: rgba(245, 245, 245, 0.774);
+}
+
+.content .login-form p {
+    color: rgb(104, 104, 104);
 }
 
 .content button {

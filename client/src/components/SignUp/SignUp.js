@@ -16,7 +16,7 @@ class SignUp extends Component {
         return(
 
             <div className='row justify-content-md-center content'>
-                <Form>
+                <Form className="signUp-form">
                     <FormGroup>
                         <p>Username:</p>
                         <FormControl type="text" name="user" id="userName" placeholder="Enter Username" />
@@ -27,9 +27,9 @@ class SignUp extends Component {
                     </FormGroup>
                     <FormGroup>
                         <p>Password:</p>
-                        <FormControl type="password" name="password" id="password" placeholder="Enter Password" />
+                        <FormControl type="password" name="password" id="password" placeholder="Create Password" />
                     </FormGroup>
-                    <Button type="submit" color="success"><Link to='/quiz'>Submit</Link></Button>
+                    <Button type="submit"><Link to='/quiz'>Submit</Link></Button>
                 </Form>
             </div>
      

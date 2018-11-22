@@ -11,7 +11,10 @@ class Quiz extends Component {
 
     render() {
         return(
+            <div>
+
             <div className='row justify-content-md-center lists'>
+
                 <Form>
                     <FormGroup>
                         <p>How important are dogs to you?</p>
@@ -69,6 +72,8 @@ class Quiz extends Component {
                     </FormGroup>
                     <Button>Submit</Button>
                 </Form>
+            </div>
+           
             </div>
         )
     }

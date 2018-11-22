@@ -1,3 +1,12 @@
 .content{
-    margin-top: 200px !important;
+    margin-top: 180px !important;
+}
+
+.content .signUp-form {
+    padding: 50px 120px 50px 120px;
+    background-color: rgba(245, 245, 245, 0.774);
+}
+
+.content .signUp-form p {
+    color: rgb(104, 104, 104);
 }

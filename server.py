@@ -1,10 +1,11 @@
 from flask import Flask
+from mysqlconnection import connectToMySQL
+
 app = Flask(__name__)
+
+mysql = connectToMySQL("doggo")
 
 @app.route("/")
 def hello():
-    return "Hello Wytftfytforld!"
+    return "Hello World!"
     
-@app.route("/math")
-def math():
-    return "1+1"

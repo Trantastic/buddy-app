@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 mysql = connectToMySQL("doggo")
 
+print("all the users", mysql.query_db("SELECT * FROM users;"))
+if __name__ == "__main__":
+    app.run(debug=True)
+
 @app.route("/")
 def hello():
     return "Hello World!"

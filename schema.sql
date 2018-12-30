@@ -1,12 +1,8 @@
--- DROP DATABASE IF EXISTS doggo;
-
--- CREATE DATABASE doggo;
-
--- USE doggo;
+DROP TABLE IF EXISTS dogs;
 
 CREATE TABLE dogs (
-    id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR NOT NULL,
-    image VARCHAR NOT NULL,
-    score INT NOT NULL
+    id INTEGER AUTO_INCREMENT,
+    name TEXT NOT NULL,
+    image TEXT NOT NULL,
+    score INTEGER NOT NULL
 );

@@ -1,26 +1,46 @@
 import sqlite3
-from flask import current_app
 
 # Establishing an object to connect to our sql db, if doesn't exist create
-conn = sqlite3.connect('dogs.db')
+# conn = sqlite3.connect('dogs.db')
 # Cursor allows us to run sql commands
-c = conn.cursor()
+# c = conn.cursor()
 
 # Create table via schema.sql file
 def init_db():
-    with current_app.open_resource('schema.sql') as f:
-        db.executescript(f.read().decode('utf8'))
+	# Starts the connection 
+	conn = sqlite3.connect('dogs.db')
+	c = conn.cursor()
 
-def insert_dog(dog):
-    with conn:
-        c.execute("INSERT INTO dogs VALUES {:name, :image, :score}", {'name': dog.name, 'image': dog.image,'score': dog.score})
+	# Read the schema file and use that to create the table
+	with open('schema.sql') as fp:
+		c.executescript(fp.read())
+	# Closes the connection to the db
+	conn.close()
 
+# Insert a dog into sql db
+def insert_dog(id, name, image, score):
+	conn = sqlite3.connect('dogs.db')
+	c = conn.cursor()
+
+	sql = 'INSERT INTO dogs (id, name, image, score) VALUES (?, ?, ?, ?)'
+	
+	# c.execute("INSERT INTO dogs VALUES {:id, :name, :image, :score}", {'id': id, 'name': name, 'image': image,'score': score})
+	c.execute(sql, (id, name, image, score))
+
+	conn.commit()
+
+	conn.close()
+
+# Select a dog from sql db to display
 def select_dog():
-    with conn:
-        c.execute("SELECT * FROM dogs")
-        print(c.fetchall())
+	conn = sqlite3.connect('dogs.db')
+	c = conn.cursor()
+	
+	c.execute("SELECT * FROM dogs")
+	return c.fetchall()
 
-conn.close()
+	conn.close()
+
 
 ### OLD CODE FROM FLASK TUTORIAL ###
 

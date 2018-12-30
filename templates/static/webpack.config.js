@@ -1,5 +1,7 @@
 const webpack = require('webpack');
 const resolve = require('path').resolve;
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+
 
 
 const config = {
@@ -26,9 +28,20 @@ const config = {
             {
                 test:/\.css$/,
                 loader: 'style-loader!css-loader?modules'
+            },
+            {
+                test: /\.html$/,
+                use: [
+                  {
+                    loader: "html-loader"
+                  }
+                ]
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebPackPlugin()
+    ]
 };
 
 

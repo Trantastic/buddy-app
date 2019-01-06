@@ -1,0 +1,20 @@
+{
+  "name": "buddy-app",
+  "version": "1.0.0",
+  "description": "*Buddy App for dogs*",
+  "main": "__init__.py",
+  "scripts": {
+    "testgit": "echo \"Error: no test specified\" && exit 1",
+    "start": "FLASK_APP=__init__.py flask run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trantastic/buddy-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trantastic/buddy-app/issues"
+  },
+  "homepage": "https://github.com/Trantastic/buddy-app#readme"
+}

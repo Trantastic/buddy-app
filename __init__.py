@@ -1,5 +1,5 @@
 from flask import Flask, request
-# import db as dbFunctions
+import db as dbFunctions
 
 #Loading static files(at the same root, which where the run.py level is)
 app = Flask(__name__)
@@ -22,8 +22,8 @@ def addDog():
     return 'Add a dog'
 
 @app.route('/select')
-def select_dog():
-    return 'seclect a dog'
+def selectDog():
+    dbFunctions.select_dog()
 
 if __name__ == '__main__':
     app.run(debug=True)

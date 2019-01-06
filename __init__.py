@@ -1,5 +1,5 @@
 from flask import Flask, request
-import db as dbFunctions
+# import db as dbFunctions
 
 #Loading static files(at the same root, which where the run.py level is)
 app = Flask(__name__)

@@ -5,6 +5,8 @@ import sqlite3
 # Cursor allows us to run sql commands
 # c = conn.cursor()
 
+#All methods below have been tested and work
+
 # Create table via schema.sql file
 def init_db():
 	# Starts the connection 

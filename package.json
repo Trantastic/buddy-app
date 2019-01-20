@@ -4,7 +4,7 @@
   "description": "*Buddy App for dogs*",
   "main": "__init__.py",
   "scripts": {
-    "testgit": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "FLASK_APP=__init__.py flask run"
   },
   "repository": {

@@ -5,8 +5,7 @@ import db as dbFunctions
 app = Flask(__name__)
 
 # ========== route for landing page==========
-# @app.route('/landingPage')
-# def landing_page():
+@app.route('/')
     
 #====== code for testing=========
 @app.route('/start')

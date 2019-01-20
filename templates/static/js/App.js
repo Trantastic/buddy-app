@@ -12,7 +12,8 @@ export default class App extends React.Component{
     return(
       // <HashRouter history={hashHistory}>
       <div>
-        <h1>Hi! There</h1>
+        <h1></h1>
+        <p>test test</p>
         <Router>
           <Route path='/' component={ LandingPage } />
         </Router>
